@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: "Raleway", sans-serif;
+}
+.main {
+  background-color: #81c408;
+}
+.secondary {
+  color: #ffb524;
+}
+.main-text {
+  color: #81c408;
+}
+ /* Header  */
+.top {
+  border-radius: 230px 100px;
+}
+.hov:hover {
+  color: #ffb524;
+}
+.nav-hov:hover {
+  cursor: pointer;
+  color: #81c408;
+}
+.transition {
+  transition: 0.3s;
+}
+.search {
+  border: 1px solid #ffb524;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.search-hov:hover {
+  background-color: #ffb524;
+}
+.bord {
+  background-color: #ffb524;
+}
+.icon-hov {
+  transition: 0.3s;
+}
+.icon-hov:hover {
+  cursor: pointer;
+  color: rgba(0,0,0,0.6);
+}
+.pages {
+  transition: 0.5s;
+}
+.pages ul {
+  visibility: hidden;
+  transition: 0.1s;
+  opacity: 0;
+}
+.pages:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.li-hov:hover {
+  background-color: #ffb524;
+}
+.bars {
+  color: #81c408;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.bar-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: #81c408;
+  padding: 10px 15px;
+}
+.bar-menu li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width:1200px){
+  .inside {
+    visibility: hidden;
+    display: none;
+  }
+  .pages:hover .inside {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .inside li {
+    padding-top: 4px;
+    color: #000;
+  }
+}
+@media screen and (min-width:1200px) {
+  .bar-menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -20px;
+  }
+  .pages:hover .inside {
+    position: absolute;
+  }
+  .pages:hover .inside li {
+    padding: 5px;
+  }
+}
+@media screen and (width:1200px) {
+  .pages:hover .inside {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    padding: 10px 40px 10px 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .pages:hover .inside li {
+    padding: 5px;
+    color: #81c408;
+  }
+}
+
+
+/* Hero  */
+.overlay {
+  background-image: url('../public/img/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+  height: 800px;
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+  .overlay {
+    height: 900px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .overlay {
+    height: 600px;
+  }
+}
+.img {
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  background-color: #ffb624c9;
+}
+
+/* Featured  */
+.after::after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: #ffb524;
+  bottom: 30px;
+  transform: rotate(45deg);
+}
+
+/* Fruits  */
+.box {
+  transition: 0.5s;
+}
+.box:hover {
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+}
+
+
+/* Service  */
+.info-service {
+  position: relative;
+  width: 250px;
+  height: 130px;
+  top: -50%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Banner  */
+.buy:hover {
+  background-color: #81c408;
+  cursor: pointer;
+}
+
+/* Bestseller  */
+.img-best {
+  border-radius: 50%;
+}
+.img-sell {
+  width: 30%;
+  height: 80%;
+}
+@media screen and (min-width:640px) {
+  .img-sell {
+    width: 40%;
+    height: 100%;
+  }
+}
+@media screen and (min-width:1200px) {
+  .img-sell {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Footer  */
+.footer-head {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer-body {
+  transition: 0.5s;
+}
+.footer-body:hover {
+  cursor: pointer;
+  color: #ffb524;
+}
+.footer-body ,
+.footer-contact {
+  color: rgba(255, 255, 255, .5);
+  line-height: 2;
+  font-size: 16px;
+}
+@media screen and (min-width:992px){
+  .footer-head {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width:1200px){
+  .footer-head {
+    font-size: 24px;
+  }
+}
+.read {
+  color: #81c408;
+}
+.read:hover {
+  background-color: #ffb524;
+  color: #fff;
+}
+.subscribe {
+  background-color: #81c408;
+}
+.subscribe:hover {
+  background-color: #ffb524;
+}
+.social {
+  color: #ffb524;
+  transition: 0.5s;
+}
+.social:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #ffb524;
+}
+
+
+
+/* Back  */
+.back {
+  background-image: url('../public/img/cart-page-header-img.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 25vh;
+  padding-top: 40px;
+  color: #fff;
+  text-align: center;
+}
+.back .overlay-back {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  z-index: 1;
+}
+.back h1 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 700;
+  top: 0;
+  z-index: 999;
+}
+.back h2 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 10px;
+  z-index: 999;
+}
+.margin {
+  margin-top: 14%;
+}
+
+/* Shop */
+.apple {
+  color: #81c408;
+}
+.apple:hover {
+  color: #ffb524;
+  cursor: pointer;
+}
+.btn-view {
+  color: #81c408;
+}
+.btn-view:hover {
+  background-color: #ffb524;
+  color: #fff;
+}
+.next li {
+  transition: 0.5s;
+}
+.next li:hover {
+  background-color: #81c408;
+  cursor: pointer;
+}
+
+/* Shop Detail  */
+.post:hover {
+  background-color: #ffb524;
+}
+.post button {
+  color: #81c408;
+}
+.post:hover button {
+  color: #fff;
+}
+
+/* 404 page  */
+.btn-error {
+  color: #45595b;
+}
+.btn-error:hover {
+  background-color: #ffb524;
+  color: #fff;
+}
+
+/* Contact  */
+.input-contact {
+  color: #81c408;
+}
+.input-contact:hover {
+  color: #fff;
+  background-color: #ffb524;
+  cursor: pointer;
+}
+
+/* Cart  */
+.img-cart {
+  width: 100px;
+  height: 100px;
+}
+.coupon,
+.checkout {
+  color: #81c408; 
+}
+.coupon:hover,
+.checkout:hover {
+  color: #fff;
+  background-color: #ffb524;
+}
+
+/* Checkout  */
+.order {
+  color: #81c408;
+}
+.order:hover {
+  background-color: #ffb524;
+  color: #fff;
+}
